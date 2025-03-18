@@ -29,7 +29,7 @@ export default function RootLayout({
           crossOrigin="anonymous" 
         />
       </head>
-      <body>
+      <body className="flex-1 overflow-y-auto main-layout bg-gray-900">
         {children}
       </body>
     </html>
