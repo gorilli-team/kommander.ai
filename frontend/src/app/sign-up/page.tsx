@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Analytics() {
+export default function Signup() {
   return (
     <div>
-      <h2>Analytics</h2>
+      <h2>Sign up</h2>
     </div>
   );
 }
