@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Providers } from "./providers"; // Aggiungi questa importazione
 
 export const metadata: Metadata = {
   title: "Kommander ai",
@@ -30,7 +31,9 @@ export default function RootLayout({
         />
       </head>
       <body className="flex-1 overflow-y-auto main-layout bg-gray-900">
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );
